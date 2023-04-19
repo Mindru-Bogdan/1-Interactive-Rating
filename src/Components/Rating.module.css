@@ -48,7 +48,7 @@
     margin-left: 1.5em;    
 }
 
-.square .paragraph {
+.paragraph {
     margin-left: 3em;  
     margin-right: 50px;
     line-height: 1.75em;
@@ -78,7 +78,7 @@
     color: #ffffff;
 }
 
-/* .selected li{
+.selected li{
     margin-top: 1em;
     margin-left: 0.3em;
     margin-right: 1em;
@@ -93,5 +93,5 @@
     display: flex;
     cursor: pointer;
     font-size: 1.1em;
-} */
+}
 

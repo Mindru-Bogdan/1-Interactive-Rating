@@ -1,0 +1,56 @@
+.square {
+    display: block;
+    width: 500px;
+    height: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -250px;
+    background-color: #1e252f;
+    border-radius: 40px;
+}
+
+.submit {
+    position: absolute;
+    background-color: #FC7712;
+    display: inline-block;
+    color: #ffe19c;
+    font-size: 1.2em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    width: 400px;
+    height: 50px;
+    border-radius: 200px;
+    font-family: inherit;
+    bottom: 40px;
+    left: 50%;
+    margin-left: -200px;
+    cursor: pointer;
+}
+
+.img {
+    position: absolute;
+    left: 10.5em;
+    top: 3.5em;
+}
+
+.square h1 {
+    position: absolute;
+    left: 5.2em;
+    bottom: 4em;
+    text-align: center;
+}
+
+.paragraph {
+    position: absolute;
+    bottom: 2em;
+    margin-left: 3em;  
+    margin-right: 50px;
+    line-height: 1.75em;
+    color: #939AA4;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.05em;
+}
+
