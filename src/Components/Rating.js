@@ -3,35 +3,96 @@ import { useState } from 'react';
 import classes from './Rating.module.css';
 import StarLogo from '../../src/icon-star.svg';
 
-const Rating = () => {
-  const [select, setSelect] = useState(false);
+const Rating = (props) => {
+  const [select1, setSelect1] = useState(false);
+  const [select2, setSelect2] = useState(false);
+  const [select3, setSelect3] = useState(false);
+  const [select4, setSelect4] = useState(false);
+  const [select5, setSelect5] = useState(false);
 
-  const selectHandler = () => {
-    setSelect(!select);
+  const [rating, setRating] = useState();
+
+  const selectRatingHandler1 = () => {
+    setRating(event.target.value);
+    setSelect1(true);
+    setSelect2(false);
+    setSelect3(false);
+    setSelect4(false);
+    setSelect5(false);
   };
+
+  const selectRatingHandler2 = () => {
+    setRating(event.target.value);
+    setSelect1(false);
+    setSelect2(true);
+    setSelect3(false);
+    setSelect4(false);
+    setSelect5(false);
+  };
+
+  const selectRatingHandler3 = () => {
+    setRating(event.target.value);
+    setSelect1(false);
+    setSelect2(false);
+    setSelect3(true);
+    setSelect4(false);
+    setSelect5(false);
+  };
+
+  const selectRatingHandler4 = () => {
+    setRating(event.target.value);
+    setSelect1(false);
+    setSelect2(false);
+    setSelect3(false);
+    setSelect4(true);
+    setSelect5(false);
+  };
+
+  const selectRatingHandler5 = () => {
+    setRating(event.target.value);
+    setSelect1(false);
+    setSelect2(false);
+    setSelect3(false);
+    setSelect4(false);
+    setSelect5(true);
+  };
+
+  const consoleLog = () => {
+    console.log(rating);
+  };
+
+  // const CallBack = (props) => {};
 
   return (
     <div className={classes.square}>
       {/* <!-- Rating state start --> */}
-      <img
-        src={StarLogo}
-        className={classes.star}
-      ></img>
+      <img src={StarLogo} className={classes.star}></img>
       <h1>How did we do?</h1>
       <p className={classes.paragraph}>
-        Please let us know how we did with your support request. All
-        feedback is appreciated to help us improve our offering!
+        Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
       </p>
 
-      <ul className={select ? classes.selected : classes.select}>
-        <li onClick={selectHandler}>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
+      <ul>
+        <li className={select1 ? classes.selected : classes.select} value={1} onClick={selectRatingHandler1}>
+          1
+        </li>
+        <li className={select2 ? classes.selected : classes.select} value={2} onClick={selectRatingHandler2}>
+          2
+        </li>
+        <li className={select3 ? classes.selected : classes.select} value={3} onClick={selectRatingHandler3}>
+          3
+        </li>
+        <li className={select4 ? classes.selected : classes.select} value={4} onClick={selectRatingHandler4}>
+          4
+        </li>
+        <li className={select5 ? classes.selected : classes.select} value={5} onClick={selectRatingHandler5}>
+          5
+        </li>
       </ul>
 
-      <button className={classes.submit}>SUBMIT</button>
+      <button className={classes.submit} onClick={consoleLog}>
+        SUBMIT
+      </button>
 
       {/* <!-- Rating state end --> */}
     </div>

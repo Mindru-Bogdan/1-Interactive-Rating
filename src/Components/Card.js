@@ -1,11 +1,11 @@
 import Rating from './Rating';
 import Submit from './Submit';
 
-const Card = () => {
+const Card = (props) => {
   return (
     <div>
-      {/* <Rating /> */}
-      <Submit />
+      <Rating />
+      {/* <Submit /> */}
     </div>
   );
 };
