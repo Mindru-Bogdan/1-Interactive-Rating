@@ -57,11 +57,9 @@ const Rating = (props) => {
     setSelect5(true);
   };
 
-  const consoleLog = () => {
-    console.log(rating);
-  };
-
-  // const CallBack = (props) => {};
+  // const consoleLog = () => {
+  //   console.log(rating);
+  // };
 
   return (
     <div className={classes.square}>
@@ -90,7 +88,7 @@ const Rating = (props) => {
         </li>
       </ul>
 
-      <button className={classes.submit} onClick={consoleLog}>
+      <button className={classes.submit} onClick={(event) => props.callBackHandler(rating)}>
         SUBMIT
       </button>
 

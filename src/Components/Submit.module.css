@@ -9,30 +9,30 @@
     margin-left: -250px;
     background-color: #1e252f;
     border-radius: 40px;
+    color: #ffffff
 }
 
-.submit {
+.rating {
     position: absolute;
-    background-color: #FC7712;
+    background-color: #262F38;
     display: inline-block;
-    color: #ffe19c;
-    font-size: 1.2em;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    width: 400px;
-    height: 50px;
+    color: #FC7712;
+    top: 14em;
+    left: 9em;
+    padding-left:1.5em;
+    padding-right: 1.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
     border-radius: 200px;
-    font-family: inherit;
-    bottom: 40px;
-    left: 50%;
-    margin-left: -200px;
-    cursor: pointer;
+    text-align: center;
 }
 
 .img {
     position: absolute;
-    left: 10.5em;
+    left: 9.5em;
     top: 3.5em;
+    width:200px;
+
 }
 
 .square h1 {

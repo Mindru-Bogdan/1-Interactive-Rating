@@ -6,11 +6,7 @@ const Submit = (props) => {
     <div className={classes.square}>
       {/* <!-- Thank you state start --> */}
       <img src={ThankYouLogo} className={classes.img}></img>
-      <p>
-        You selected
-        {/*  <!-- Add rating here -->  */}
-        out of 5
-      </p>
+      <p className={classes.rating}>You selected {props.rating} out of 5</p>
 
       <h1>Thank you!</h1>
 
