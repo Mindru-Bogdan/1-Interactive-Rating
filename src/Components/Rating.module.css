@@ -1,98 +1,199 @@
-.square {
-    display: block;
-    width: 500px;
-    height: 500px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    margin-top: -250px;
-    margin-left: -250px;
-    background-color: #1e252f;
-    border-radius: 40px;
+@media only screen and (max-device-width: 375px) {
+    .square {
+        display: block;
+        width: 330px;
+        height: 360px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: -180px;
+        margin-left: -165px;
+        background-color: #1e252f;
+        border-radius: 15px;
+    }
+    
+    .submit {
+        position: absolute;
+        background-color: #FC7712;
+        display: inline-block;
+        color: #ffe19c;
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 1.6px;
+        width: 275px;
+        height: 45px;
+        border-radius: 200px;
+        font-family: inherit;
+        bottom: 26px;
+        left: 50%;
+        margin-left: -137.5px;
+        cursor: pointer;
+    }
+    
+    .star {
+        position: absolute;
+        margin-left: 25px;
+        top: 25px;
+        background-color: #262F38;
+        padding: 13px;
+        border-radius: 26px;
+    }
+    
+    .square h1 {
+        margin-top: 3.4em;
+        margin-left: 0.8em;    
+        color: #ffffff;
+        font-size: 25px;
+        font-weight: 400;
+    }
+    
+    .paragraph {
+        margin-left: 1.5em;  
+        margin-right: 0.5em;
+        line-height: 1.45em;
+        color: #939AA4;
+        font-size: 14.5px;
+        font-weight: 400;
+    }
+
+    ul {
+        padding-left: 1.1em;
+        padding-top:0.2em;
+    }
+    
+    .select {
+        margin-top: 0.5em;
+        margin-left: 0.25em;
+        margin-right: 1em;
+        float: left;
+        list-style-type: none;
+        background-color: #262F38;
+        color: #939AA4;
+        line-height: 0.5em;
+        font-weight: 400;;
+        padding: 1.2em;
+        border-radius: 2.5em;
+        display: flex;
+        cursor: pointer;
+        font-size: 0.9em;
+    }
+    
+    .selected{
+        margin-top: 0.5em;
+        margin-left: 0.25em;
+        margin-right: 1em;
+        float: left;
+        list-style-type: none;
+        background-color: #7C8896;
+        color: #ffffff;
+        line-height: 0.5em;
+        font-weight: 400;;
+        padding: 1.2em;
+        border-radius: 2.5em;
+        display: flex;
+        cursor: pointer;
+        font-size: 0.9em;
+    }
 }
 
-.submit {
-    position: absolute;
-    background-color: #FC7712;
-    display: inline-block;
-    color: #ffe19c;
-    font-size: 1.2em;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    width: 400px;
-    height: 50px;
-    border-radius: 200px;
-    font-family: inherit;
-    bottom: 40px;
-    left: 50%;
-    margin-left: -200px;
-    cursor: pointer;
+@media only screen and (min-device-width: 1440px) {
+    .square {
+        display: block;
+        width: 500px;
+        height: 500px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: -250px;
+        margin-left: -250px;
+        background-color: #1e252f;
+        border-radius: 40px;
+    }
+    
+    .submit {
+        position: absolute;
+        background-color: #FC7712;
+        display: inline-block;
+        color: #ffe19c;
+        font-size: 19.2px;
+        font-weight: 700;
+        letter-spacing: 1.6px;
+        width: 400px;
+        height: 50px;
+        border-radius: 200px;
+        font-family: inherit;
+        bottom: 40px;
+        left: 50%;
+        margin-left: -200px;
+        cursor: pointer;
+    }
+    
+    .submit:hover {
+        background-color: #ffffff;
+        color: #FC7712;
+    }
+    
+    .star {
+        position: absolute;
+        margin-left: 48px;
+        top: 48px;
+        background-color: #262F38;
+        padding: 16px;
+        border-radius: 32px;
+    }
+    
+    .square h1 {
+        margin-top: 4em;
+        margin-left: 1.5em;    
+        color: #ffffff;
+    }
+    
+    .paragraph {
+        margin-left: 3em;  
+        margin-right: 50px;
+        line-height: 1.75em;
+        color: #939AA4;
+        font-weight: 700;
+    }
+    
+    .select {
+        margin-top: 1em;
+        margin-left: 0.3em;
+        margin-right: 1em;
+        float: left;
+        list-style-type: none;
+        background-color: #262F38;
+        color: #939AA4;
+        line-height: 0.5em;
+        font-weight: 700;;
+        padding: 1.5em;
+        border-radius: 2.5em;
+        display: flex;
+        cursor: pointer;
+        font-size: 1.1em;
+    }
+    
+    ul :hover {
+        background-color: #FC7712;
+        color: #ffffff;
+    }
+    
+    .selected{
+        margin-top: 1em;
+        margin-left: 0.3em;
+        margin-right: 1em;
+        float: left;
+        list-style-type: none;
+        background-color: #7C8896;
+        color: #ffffff;
+        line-height: 0.5em;
+        font-weight: 700;;
+        padding: 1.5em;
+        border-radius: 2.5em;
+        display: flex;
+        cursor: pointer;
+        font-size: 1.1em;
+    }
 }
 
-.submit:hover {
-    background-color: #ffffff;
-    color: #FC7712;
-}
-
-.star {
-    position: absolute;
-    margin-left: 3em;
-    top: 3em;
-    background-color: #262F38;
-    padding: 1em;
-    border-radius: 2em;
-}
-
-.square h1 {
-    margin-top: 4em;
-    margin-left: 1.5em;    
-    color: #ffffff;
-}
-
-.paragraph {
-    margin-left: 3em;  
-    margin-right: 50px;
-    line-height: 1.75em;
-    color: #939AA4;
-    font-weight: 700;
-}
-
-.select {
-    margin-top: 1em;
-    margin-left: 0.3em;
-    margin-right: 1em;
-    float: left;
-    list-style-type: none;
-    background-color: #262F38;
-    color: #939AA4;
-    line-height: 0.5em;
-    font-weight: 700;;
-    padding: 1.5em;
-    border-radius: 2.5em;
-    display: flex;
-    cursor: pointer;
-    font-size: 1.1em;
-}
-
-ul :hover {
-    background-color: #FC7712;
-    color: #ffffff;
-}
-
-.selected{
-    margin-top: 1em;
-    margin-left: 0.3em;
-    margin-right: 1em;
-    float: left;
-    list-style-type: none;
-    background-color: #7C8896;
-    color: #ffffff;
-    line-height: 0.5em;
-    font-weight: 700;;
-    padding: 1.5em;
-    border-radius: 2.5em;
-    display: flex;
-    cursor: pointer;
-    font-size: 1.1em;
-}
 

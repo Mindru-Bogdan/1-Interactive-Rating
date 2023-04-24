@@ -11,9 +11,11 @@ const Rating = (props) => {
   const [select5, setSelect5] = useState(false);
 
   const [rating, setRating] = useState();
+  const [ratingSelected, setRatingSelected] = useState(false);
 
   const selectRatingHandler1 = () => {
     setRating(event.target.value);
+    setRatingSelected(true);
     setSelect1(true);
     setSelect2(false);
     setSelect3(false);
@@ -23,6 +25,7 @@ const Rating = (props) => {
 
   const selectRatingHandler2 = () => {
     setRating(event.target.value);
+    setRatingSelected(true);
     setSelect1(false);
     setSelect2(true);
     setSelect3(false);
@@ -32,6 +35,7 @@ const Rating = (props) => {
 
   const selectRatingHandler3 = () => {
     setRating(event.target.value);
+    setRatingSelected(true);
     setSelect1(false);
     setSelect2(false);
     setSelect3(true);
@@ -41,6 +45,7 @@ const Rating = (props) => {
 
   const selectRatingHandler4 = () => {
     setRating(event.target.value);
+    setRatingSelected(true);
     setSelect1(false);
     setSelect2(false);
     setSelect3(false);
@@ -50,16 +55,13 @@ const Rating = (props) => {
 
   const selectRatingHandler5 = () => {
     setRating(event.target.value);
+    setRatingSelected(true);
     setSelect1(false);
     setSelect2(false);
     setSelect3(false);
     setSelect4(false);
     setSelect5(true);
   };
-
-  // const consoleLog = () => {
-  //   console.log(rating);
-  // };
 
   return (
     <div className={classes.square}>
@@ -69,7 +71,6 @@ const Rating = (props) => {
       <p className={classes.paragraph}>
         Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
       </p>
-
       <ul>
         <li className={select1 ? classes.selected : classes.select} value={1} onClick={selectRatingHandler1}>
           1
@@ -88,7 +89,7 @@ const Rating = (props) => {
         </li>
       </ul>
 
-      <button className={classes.submit} onClick={(event) => props.callBackHandler(rating)}>
+      <button className={classes.submit} onClick={ratingSelected ? (event) => props.callBackHandler(rating) : () => {}}>
         SUBMIT
       </button>
 

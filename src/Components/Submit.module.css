@@ -1,56 +1,121 @@
-.square {
-    display: block;
-    width: 500px;
-    height: 500px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    margin-top: -250px;
-    margin-left: -250px;
-    background-color: #1e252f;
-    border-radius: 40px;
-    color: #ffffff
+@media only screen and (max-device-width: 375px) {
+    .square {
+        display: block;
+        width: 330px;
+        height: 360px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: -180px;
+        margin-left: -165px;
+        background-color: #1e252f;
+        border-radius: 15px;
+        color: #ffffff
+    }
+    
+    .rating {
+        position: absolute;
+        background-color: #262F38;
+        display: inline-block;
+        color: #FC7712;
+        top: 10em;
+        left: 6em;
+        padding-left:1em;
+        padding-right: 1em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        border-radius: 200px;
+        text-align: center;
+        font-weight: 400;
+        font-size:14px;
+    }
+    
+    .img {
+        position: absolute;
+        left: 6.3em;
+        top: 2.2em;
+        width:140px;
+    }
+    
+    .square h1 {
+        position: absolute;
+        left: 4.5em;
+        bottom: 4em;
+        text-align: center;
+        font-weight: 400;
+        font-size: 24px;
+    }
+    
+    .paragraph {
+        position: absolute;
+        bottom: 1.4em;
+        margin-left: 1em;  
+        margin-right: 1em;
+        line-height: 1.5em;
+        color: #939AA4;
+        font-weight: 7400;
+        text-align: center;
+        font-size: 0.9em;
+    }
+    
 }
 
-.rating {
-    position: absolute;
-    background-color: #262F38;
-    display: inline-block;
-    color: #FC7712;
-    top: 14em;
-    left: 9em;
-    padding-left:1.5em;
-    padding-right: 1.5em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    border-radius: 200px;
-    text-align: center;
-}
-
-.img {
-    position: absolute;
-    left: 9.5em;
-    top: 3.5em;
-    width:200px;
-
-}
-
-.square h1 {
-    position: absolute;
-    left: 5.2em;
-    bottom: 4em;
-    text-align: center;
-}
-
-.paragraph {
-    position: absolute;
-    bottom: 2em;
-    margin-left: 3em;  
-    margin-right: 50px;
-    line-height: 1.75em;
-    color: #939AA4;
-    font-weight: 700;
-    text-align: center;
-    font-size: 1.05em;
+@media only screen and (min-device-width: 1440px) {
+    .square {
+        display: block;
+        width: 500px;
+        height: 500px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: -250px;
+        margin-left: -250px;
+        background-color: #1e252f;
+        border-radius: 40px;
+        color: #ffffff
+    }
+    
+    .rating {
+        position: absolute;
+        background-color: #262F38;
+        display: inline-block;
+        color: #FC7712;
+        top: 14em;
+        left: 9em;
+        padding-left:1.5em;
+        padding-right: 1.5em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        border-radius: 200px;
+        text-align: center;
+    }
+    
+    .img {
+        position: absolute;
+        left: 9.5em;
+        top: 3.5em;
+        width:200px;
+    
+    }
+    
+    .square h1 {
+        position: absolute;
+        left: 5.2em;
+        bottom: 4em;
+        text-align: center;
+    }
+    
+    .paragraph {
+        position: absolute;
+        bottom: 2em;
+        margin-left: 3em;  
+        margin-right: 50px;
+        line-height: 1.75em;
+        color: #939AA4;
+        font-weight: 700;
+        text-align: center;
+        font-size: 1.05em;
+    }
+    
 }
 
