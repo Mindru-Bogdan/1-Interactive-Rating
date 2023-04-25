@@ -1,4 +1,4 @@
-@media only screen and (max-device-width: 375px) {
+@media only screen and (max-device-width: 499px) {
     .square {
         display: block;
         width: 330px;
@@ -96,7 +96,7 @@
     }
 }
 
-@media only screen and (min-device-width: 1440px) {
+@media only screen and (min-device-width: 500px) {
     .square {
         display: block;
         width: 500px;
